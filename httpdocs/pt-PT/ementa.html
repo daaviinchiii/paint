@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dondué Menu</title>
+  <link rel = "icon" href =  "./imagens/Novo Projeto.ico" 
+        type = "image/x-icon">
+  <link rel="stylesheet"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/pt-PT/stylesheet.css" />
+  <link rel="stylesheet" href="/pt-PT/style2.css" />
+</head>
+
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container container">
+      <a href="../casa.html" class="Logo" title="Logo">
+        <img id="logoImage2" class="logoImage2" src="/PT-pt/imagens/white.png" alt="Logo" />
+        <img id="logoImage" class="logoImage" src="/PT-pt/imagens/black.png" alt="Logo" />
+      </a>
+      <input type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div> 
+      <ul class="menu-items">
+        <li><a href="../casa.html">Casa</a></li>
+        <li><a href="./ementa.html">Ementa</a></li>
+        <li><a href="./contatos.html">Contatos</a></li>
+        <label>
+          <input class="toggle-checkbox" type="checkbox" id="toggle-mode">
+          <div class="toggle-slot">
+            <div class="sun-icon-wrapper">
+              <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+            </div>
+            <div class="toggle-button"></div>
+            <div class="moon-icon-wrapper">
+              <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+            </div>
+          </div>
+        </label>
+        <button id="languageButton" onclick="toggleLanguage()">EN</button>
+  </nav>
+  <section id="food" id="inicio">
+    <h2>Tipos De Comidas</h2>
+    <div class="food-container container">
+      <div class="food-slider">
+        <button class="slider-button  arrow-left">&#9664;</button>
+        <button class="slider-button arrow-right">&#9654;</button>
+        <div class="food-type grin">
+          <div class="img-container">
+            <img src="./imagens/petiscos.png" alt="error" />
+            <div class="img-content">
+              <h3 id="petiscos">Petiscos</h3>
+              <a href="#Petiscos1" class="btn btn-primary" id="more4" id="scrollButtonpetiscos">mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type grin">
+          <div class="img-container">
+            <img src="./imagens/petiscos.png" alt="error" />
+            <div class="img-content">
+              <h3 id="sopas">Sopas</h3>
+              <a href="#Sopas1" class="btn btn-primary" id="more4" id="scrollButtonpetiscos">mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type fruite">
+          <div class="img-container">
+            <img src="./imagens/wrap.png" alt="error" />
+              <div class="img-content">
+              <h3>Wraps</h3>
+              <a href="#Wraps" class="btn btn-primary" id="more" id="scrollButtonwraps">mais</a>
+            </div>
+        </div>
+      </div>
+      <div class="food-type vegetable">
+        <div class="img-container">
+          <img src="./imagens/burger.jpg" alt="error" />
+          <div class="img-content">
+            <h3 id="carnes">Hamburgers</h3>
+            <a href="#carne" class="btn btn-primary" id="more2" id="scrollButtoncarne">mais</a>
+          </div>
+        </div>
+      </div>
+      <div class="food-type fruite">
+        <div class="img-container">
+          <img src="./imagens/wrap.png" alt="error" />
+            <div class="img-content">
+            <h3>Bowls</h3>
+            <a href="#Bowls" class="btn btn-primary" id="more" id="scrollButtonBowls">mais</a>
+          </div>
+      </div>
+    </div>
+    <div class="food-type fruite">
+      <div class="img-container">
+        <img src="./imagens/wrap.png" alt="error" />
+          <div class="img-content">
+          <h3>Scoop Proteína</h3>
+          <a href="#ScoopProteína1" class="btn btn-primary" id="more" id="scrollButtonScoopProteína">mais</a>
+        </div>
+    </div>
+  </div>
+  <div class="food-type fruite">
+    <div class="img-container">
+      <img src="./imagens/wrap.png" alt="error" />
+        <div class="img-content">
+        <h3>Brunch</h3>
+        <a href="#Brunch" class="btn btn-primary" id="more" id="scrollButtonBrunch">mais</a>
+      </div>
+  </div>
+</div>
+<div class="food-type fruite">
+  <div class="img-container">
+    <img src="./imagens/wrap.png" alt="error" />
+      <div class="img-content">
+      <h3>Sobremesas</h3>
+      <a href="#Sobremesas1" class="btn btn-primary" id="more" id="scrollButtonBrunchSobremesas">mais</a>
+    </div>
+  </div>
+    </div>
+        <div class="food-type vegetable">
+          <div class="img-container">
+            <img src="./imagens/bebidas.png" alt="error" />
+            <div class="img-content">
+              <h3 id="bebidas">Bebidas</h3>
+              <a href="#Bebidas" class="btn btn-primary" id="more3">mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-type grin">
+          <div class="img-container">
+            <img src="./imagens/petiscos.png" alt="error" />
+            <div class="img-content">
+              <h3 id="petiscos">Petiscos</h3>
+              <a href="#Petiscos" class="btn btn-primary" id="more4" id="scrollButtonpetiscos">mais</a>
+            </div>
+          </div>
+        </div>
+       
+</section><button class="floating-button" id="floating-buttoninicio">⬆</button>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Petiscos1" style="font-weight: bold;">Petiscos</h2>
+  <div class="food-menu-container container">
+      <div class="texto-esquerda">
+        <h2 class="food-titile">Tábua de queijo</h2>
+        <p>
+          2 tipos de queijo das Furnas, queijo de S. Jorge, pé de
+torresmo, compota, uvas, nozes e bolachas de água e sal 
+        </p>
+        <p class="food-price"> 15,00€</p>
+      </div>
+      <div class="texto-direita">
+        <h2 class="food-titile">Tábua de enchidos</h2>
+        <p>
+          Chouriço, morcelinhas, alheira, pé de torresmo,
+uvas, nozes e bolacha de água e sal
+        </p>
+        <p class="food-price">12,50€</p>
+      </div>
+    </div>
+    <div  class="food-menu-container container">
+      <div class="texto-esquerda">
+        <h2 class="food-titile">Tábua Mista</h2>
+        <P>
+          Tábua Mista dois tipos de queijo das Furnas,queijo de S. Jorge,<br>
+pé de torresmo, compota, nozes, uvas, chouriço,
+morcelinhas, alheira e bolachas de água e sal
+        </p>
+        <p class="food-price">24,00€</p>
+      </div>
+      <div class="texto-direita">
+        <h2 class="food-titile">Tábua de 3 Húmus</h2>
+        <p >
+          Húmus de grão de bico, húmus de ervilha,
+húmus de beterraba, cenoura, pepino e falafels
+        </p>
+        <p  class="food-price">10,00€</p>
+      </div>
+      
+    </div>
+    <div class="food-menu-container container">
+      <div class="texto-esquerda">
+        <h2 class="food-titile"  >Morcela com ananás</h2>
+        <p>
+        </p>
+        <p class="food-price">9,00€</p>
+      </div>
+  
+
+      <div  class="texto-esquerda"  >
+        <h2 class="food-titile" di>Chouriço à bombeiro</h2>
+        <p>
+        </p>
+        <p class="food-price">6,00€</p>
+      </div>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Sopas1" style="font-weight: bold;">Sopas</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Sopa do dia</h2>
+      <p>
+      </p>
+      <p class="food-price"> 2,00€</p>
+    </div>
+   
+</section>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Wraps" style="font-weight: bold;">Wraps</h2>
+  <p class="food-menu-heading2" >(Acompanhado de Salada ou batata doce frita)</p>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Wrap de Atum dos Açores</h2>
+      <p>
+        Atum dos Açores, espinafres ou rúcula ou alface,
+        courgete, sementes sésamo, tomate e molho mel e mostarda
+      </p>
+      <p class="food-price"> 8,00€</p>
+    </div>
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Wrap de frango</h2>
+      <p>
+        Peito de frango panado com amêndoas, alface,
+tomate, pepino e molho de iogurte
+      </p>
+      <p class="food-price">8,00€</p>
+    </div>
+  </div>
+  <div  class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Wrap de húmus</h2>
+      <P>
+        Húmus, espinafres ou rúcula ou alface, cenoura e 
+        falafels, molho tahine
+      </p>
+      <p class="food-price">8,00€</p>
+    </div>
+    <div id="warp-almongas"class="texto-esquerda">
+      <h2 class="food-titile">Wrap de almôndegas</h2>
+      <p >
+        Almôndegas caseiras, alface, tomate e guacamole
+      </p>
+      <p  class="food-price">8,00€</p>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="carne" style="font-weight: bold;">Hamburgers</h2>
+  <p class="food-menu-heading2" >(Acompanhado de Salada ou batata doce frita)</p>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Bovino</h2>
+      <p>
+        Pão de sementes, ananás, rúcula, queijo das Furnas
+e molho à escolha
+      </p>
+      <p class="food-price"> 8,00€</p>
+    </div>
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Vegan</h2>
+      <p >
+        Pão de sementes , hamburger de feijão preto, alface,
+tomate, abacate e molho à escolha
+*Pode ser servido em bolo lêvedo das Furnas (+1,50€)
+      </p>
+      <p class="food-price">8,00€</p>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Bowls" style="font-weight: bold;">Bowls</h2>
+  <div class="food-menu-container container" >
+  <div class="texto-direita">
+    <h2 class="food-titile" >Bowl de fruta</h2>
+    <p>
+      Iogurte grego, fruta, granola Dondué e sementes de chia
+    </p>
+    <p class="food-price"> 5,00€</p>
+  </div>
+  <div class="texto-esquerda">
+    <h2 class="food-titile">Bowl de chocolate</h2>
+    <p >
+      Iogurte grego, fruta, granola Dondué e chocolate 
+    </p>
+    <p  class="food-price">5,50€</p>
+  </div>
+</div>
+<div  class="food-menu-container container">
+  <div class="texto-direita">
+    <h2 class="food-titile">Bowl de spirulina</h2>
+    <P>
+      Iogurte grego, fruta, spirulina e granola Dondué
+
+    </p>
+    <p class="food-price">6,00€</p>
+  </div>
+  <div class="texto-esquerda" >
+    <h2 class="food-titile">Bowl vegan</h2>
+    <p >
+      Polpa de manga, fruta, sementes de chia e sésamo e nozes
+    </p>
+    <p  class="food-price">6,00€</p>
+  </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Bowl de aveia</h2>
+      <p>
+        Leite, aveia, açúcar, raspa limão e fruta
+      </p>
+      <p class="food-price"> 4,50€</p>
+    </div>
+  </div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading"  style="font-weight: bold;">Bowls Salgadas</h2>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda">
+          <h2 class="food-titile">Bowl de queijo fresco</h2>
+          <p>
+            Alface, queijo fresco, fruta, tomate cherry e orégãos
+          </p>
+          <p class="food-price"> 6,50€</p>
+        </div>
+        <div  class="texto-direita">
+          <h2 class="food-titile" >Bowl de chilli de quinoa</h2>
+          <p>
+            Chilli Caseiro, batata doce, abacate e quinoa
+          </p>
+          <p class="food-price">7,50€</p>
+        </div>
+      </div>
+      <div  class="food-menu-container container">
+        <div class="texto-esquerda">
+          <h2 class="food-titile">Bowl de caril</h2>
+          <P>
+            Caril de grão de bico acompanhado por arroz e salada
+          </p>
+          <p class="food-price">7,00€</p>
+        </div>
+        
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading"  style="font-weight: bold;">Bowls Custom made</h2>
+  <div class="food-menu-container container">
+    <div id="custom" class="food-description"  >
+      <h2 class="food-titile">Base (Alface frisada roxa, rúcula e tomate Cherry) <p class="food-price">8,00€</p></h2>
+      <h2 class="food-titile"> <br>Acompanhamentos (Escolha 1)  </h2>
+      <p>
+        Arroz Marroquino
+        ,Grão Temperado
+        ,Legumes Salteados
+        ,Quinoa
+        ,Lentilhas    </p>
+        <p class="food-price">(Extra: 1,50€)</p>
+        <h2 class="food-titile"><br>Proteínas (Escolha 1)</h2>
+        <p>
+        Falafel
+        ,Almôndegas
+,Frango 
+,Atum
+      </p>
+      <p class="food-price">(Extra: 3,00€)</p>
+      <h2 class="food-titile"><br>Molhos (Escolha 1)</h2>
+      <p>Tahine
+        ,Iogurte e ervas
+        ,Mel e mostarda
+        ,Maionese Vegan
+        ,Guacamole
+      </p>
+      <p class="food-price">(Extra: 3,00€)</p>
+    </div>
+    
+</section>
+  <section id="food-menu">
+  <h2 class="food-menu-heading"  style="font-weight: bold;">Ovos</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Omelete com ervas finas</h2>
+      <p>
+      </p>
+      <p class="food-price">2,00€</p>
+    </div>
+
+
+    <div  class="texto-direita" >
+      <h2 class="food-titile" >Claras com ervas finas</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda">
+      <h2 class="food-titile"  >Mexidos</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+
+
+    <div  class="texto-direita">
+      <h2 class="food-titile" >Benedict</h2>
+      <p>Bolo lêvedo, abacate, molho holandês e bacon
+
+      </p>
+      <p class="food-price">7,50€</p>
+    </div>
+  </div>
+</section>
+  <section id="food-menu">
+    <h2 class="food-menu-heading" style="font-weight: bold;">Brunch</h2>
+    <p class="food-menu-heading2" >(Panquecas, Waffles, Crepes)</p>
+    <div class="food-menu-container container">
+      <div class="texto-esquerda">
+        <h2 class="food-titile">Ananás</h2>
+        <p>
+          Ananás caramelizado, bolacha mulata e iogurte grego
+        </p>
+        <p class="food-price">6,00€</p>
+      </div>
+      <div  class="texto-direita">
+        <h2 class="food-titile">Banana</h2>
+        <p>
+          Banana dos Açores, bolacha oreo, chocolate e iogurte grego 
+        </p>
+        <p class="food-price">6,00€</p>
+      </div>
+    </div>
+    <div class="food-menu-container container">
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Simples</h2>
+      <p>
+        *Qualquer uma das opções inclui um topping líquido: morango, mel, 
+        chocolate, caramelo ou manteiga de amendoim.        </p>
+      <p class="food-price">4,00€</p>
+    </div>
+        <div class="texto-direita" >
+          <h2 class="food-titile" >Aveia  </h2>
+          <p>
+          </p>
+          <p class="food-price">4,50€</p>
+        </div>
+</section>
+<section id="food-menu">
+  <p class="food-menu-heading" > Extras</p>
+
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Bacon</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Morcela</h2>
+      <p>
+      </p>
+      <p class="food-price">+4,00€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Ovo estrelado</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile" di>Chouriço</h2>
+      <p>
+      </p>
+      <p class="food-price">+4,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Granola Dondué</h2>
+      <p>
+      </p>
+      <p class="food-price">+2,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2  class="food-titile" di>Gelatina</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,00€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Frozen Yogurt</h2>
+      <p>
+      </p>
+      <p class="food-price">+2,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile" di>Salada de fruta</h2>
+      <p>
+      </p>
+      <p class="food-price">+2,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Scoop Proteína</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,50€</p>
+    </div>
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Mini Salada</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Fiambre</h2>
+      <p>(Fiambre de peru e fiambre de perna)
+      </p>
+      <p class="food-price">+1,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile" di>Queijo </h2>
+      <p>(Flamengo, Fresco, Topo, Furnense)
+      </p>
+      <p class="food-price">+2,00€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Cesta de Pão</h2>
+      <p>(Pão de sementes, croissant, bolo lêvedo e massa sovada)
+      </p>
+      <p class="food-price">+4,00€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Potinho Fit</h2>
+      <p>(Iogurte grego, gelatina, fruta, chia, granola Dondué)
+      </p>
+      <p class="food-price">+4,00€</p>
+    </div>
+  </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading"   >Tostas & Sandes</h2>
+  <div class="food-menu-container container">
+    <div class="texto-direita" >
+      <h2 class="food-titile"  >Croissant</h2>
+      <p>
+      </p>
+      <p class="food-price">1,50€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Bolo lêvedo</h2>
+      <p>
+      </p>
+      <p class="food-price">1,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita" >
+      <h2 class="food-titile"  >Pão de sementes</h2>
+      <p>
+      </p>
+      <p class="food-price">1,50€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile" di>Massa sovada</h2>
+      <p>
+      </p>
+      <p class="food-price">1,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Waffles de queijo e espinafre</h2>
+      <p>
+      </p>
+      <p class="food-price">3,50€</p>
+    </div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading2" >Com:</h2>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda" >
+          <h2 class="food-titile"  >Fiambre de peru</h2>
+          <p>
+          </p>
+          <p class="food-price">0,50€</p>
+        </div>
+    
+    
+        <div class="texto-direita">
+          <h2 class="food-titile">Fiambre da pá</h2>
+          <p>
+          </p>
+          <p class="food-price">0,50€</p>
+        </div>
+      </div>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda" >
+          <h2 class="food-titile"  >Queijo Flamengo</h2>
+          <p>
+          </p>
+          <p class="food-price">0,50€</p>
+        </div>
+   <div class="texto-direita">
+          <h2 class="food-titile" di>Queijo de São Jorge</h2>
+          <p>
+          </p>
+          <p class="food-price">1,10€</p>
+        </div>
+      </div>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda">
+          <h2 class="food-titile"  >Misto</h2>
+          <p>
+          </p>
+          <p class="food-price">1,00€</p>
+        </div> 
+        <div class="texto-direita">
+          <h2 class="food-titile" di>Pé de torresmo</h2>
+          <p>
+          </p>
+          <p class="food-price">1,00€</p>
+        </div>
+      </div>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda">
+          <h2 class="food-titile"  >Tomate</h2>
+          <p>
+          </p>
+          <p class="food-price">0,50€</p>
+        </div>
+        <div class="texto-direita">
+          <h2 class="food-titile" di>Abacate</h2>
+          <p>
+          </p>
+          <p class="food-price">1,00€</p>
+        </div>
+      </div>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda" >
+          <h2 class="food-titile"  >Omelete</h2>
+          <p>
+          </p>
+          <p class="food-price">2,00€</p>
+        </div> 
+        <div class="texto-direita">
+          <h2 class="food-titile" di>Queijo Fresco</h2>
+          <p>
+          </p>
+          <p class="food-price">2,25€</p>
+        </div>
+      </div>
+        
+        </section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Sobremesas1" style="font-weight: bold;">Sobremesas</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Sobremesa vegan</h2>
+      <p>
+      </p>
+      <p class="food-price">4,00€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Sobremesa do dia</h2>
+      <p>
+      </p>
+      <p class="food-price">4,00€</p>
+    </div>
+  </div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading2" >FROZEN YOGURT</h2>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda" >
+          <h2 class="food-titile"  >Pequeno</h2>
+          <p>
+          </p>
+          <p class="food-price">2,50€</p>
+        </div>
+    
+    
+        <div class="texto-direita">
+          <h2 class="food-titile">Médio</h2>
+          <p>
+          </p>
+          <p class="food-price">3,00€</p>
+        </div>
+      </div>
+      <div class="food-menu-container container">
+        <div class="texto-esquerda" >
+          <h2 class="food-titile"  >Grande</h2>
+          <p>
+          </p>
+          <p class="food-price">3,50€</p>
+        </div>
+
+        </section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="bebidasmenu1" style="font-weight: bold;">Bebidas</h2>
+    <div class="food-menu-container container">
+      <div class="texto-direita" >
+        <h2 class="food-titile"  >Água (33cl)</h2>
+        <p>
+        </p>
+        <p class="food-price">1,00€</p>
+      </div>
+  
+  
+      <div class="texto-esquerda">
+        <h2 class="food-titile">Água (1,5lt)</h2>
+        <p>
+        </p>
+        <p class="food-price">2,00€</p>
+      </div>
+    </div>
+    <div class="food-menu-container container">
+      <div class="texto-direita">
+        <h2 class="food-titile"  >Água (com gás 33cl)</h2>
+        <p>
+        </p>
+        <p class="food-price">1,50€</p>
+      </div>
+ <div class="texto-esquerda" >
+        <h2 class="food-titile" di>Refrigerantes & Néctares</h2>
+        <p>
+        </p>
+        <p class="food-price">1,50€</p>
+      </div>
+    </div>
+    <div class="food-menu-container container">
+      <div class="texto-direita">
+        <h2 class="food-titile"  >Mimosa</h2>
+        <p>
+        </p>
+        <p class="food-price">2,00€</p>
+      </div> 
+      <div class="texto-esquerda">
+        <h2 class="food-titile" di>Sumo natural do dia</h2>
+        <p>
+        </p>
+        <p class="food-price">2,50€</p>
+      </div>
+    </div>
+    <div class="food-menu-container container">
+      <div class="texto-direita">
+        <h2 class="food-titile"  >Sumo natural (Laranja | Ananás)</h2>
+        <p>
+        </p>
+        <p class="food-price">3,00€</p>
+      </div>
+  </section>
+  <section id="food-menu">
+    <h2 class="food-menu-heading2" id="bebidasmenu1" style="font-weight: bold;">Cerveja</h2>
+    <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Cerveja (Fino)</h2>
+      <p>
+      </p>
+      <p class="food-price">1,20€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Cerveja (tulipa)</h2>
+      <p>
+      </p>
+      <p class="food-price">1,70€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Cerveja (Caneca)</h2>
+      <p>
+      </p>
+      <p class="food-price">3,00€</p>
+    </div>
+<div class="texto-direita">
+      <h2 class="food-titile" di>Tango</h2>
+      <p>
+      </p>
+      <p class="food-price">+0,50€</p>
+    </div>
+  </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Smoothies" style="font-weight: bold;">Smoothies</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile">Smoothie de fruta | Multivitaminico</h2>
+      <p>
+      </p>
+      <p class="food-price">3,00€</p>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Wraps" style="font-weight: bold;">Milk Shakes</h2>
+  <div class="food-menu-container container">
+    <div class="texto-direita" >
+      <h2 class="food-titile"  >Milk shake de fruta</h2>
+      <p>Iogurte grego, fruta
+      </p>
+      <p class="food-price">1,00€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Milk shake vegan</h2>
+      <P>
+        Manjericão, Bebida de Soja, fruta, açúcar
+  
+      </p>
+      <p class="food-price">4,00€</p>
+    </div>
+    </div>
+  <div  class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Milk shake de Oreo</h2>
+      <p >
+        Iogurte grego, oreo, açúcar
+      </p>
+      <p  class="food-price">4,00€</p>
+    </div>
+    <div class="texto-esquerda">
+      <h2 class="food-titile" di>Milk shake de after eight </h2>
+      <p>Iogurte grego, açúcar, hortelã chocolate, flocos de chocolate
+      </p>
+      <p class="food-price">2,00€</p>
+    </div>
+    </div> 
+      </section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="CHÁSEINFUSÕES1" style="font-weight: bold;">Chás e Infusões</h2>
+  <div class="food-menu-container container">
+    <div class="texto-direita" >
+      <h2 class="food-titile"  >Chá preto Gorreana</h2>
+      <p>
+      </p>
+      <p class="food-price">1,75€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Chá verde Gorreana</h2>
+      <p>
+      </p>
+      <p class="food-price">1,75€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile">Infusão chá verde</h2>
+      <p>(com ananás/ ananás e canela de ceilão/ 
+        erva príncipe/menta, limão, canela e stevia/salsa/anis/hibisco/lúcia lima/poejo)
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading2" >Chai Latte</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Grande</h2>
+      <p>
+      </p>
+      <p class="food-price">2,60€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Pequeno</h2>
+      <p>
+      </p>
+      <p class="food-price">2,20€</p>
+    </div>
+  </div>
+    </section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Wraps" style="font-weight: bold;">Cafetaria</h2>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda">
+      <h2 class="food-titile"  >Expresso</h2>
+      <p>
+      </p>
+      <p class="food-price">0,80€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Expresso Duplo</h2>
+      <p>
+      </p>
+      <p class="food-price">1,60€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Meia de Leite</h2>
+      <p>
+      </p>
+      <p class="food-price">1,20€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Frappé de café</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Frappé de chocolate</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Frappé mocha</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Iced coffee</h2>
+      <p>
+      </p>
+      <p class="food-price">1,75€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Iced Latte</h2>
+      <p>
+      </p>
+      <p class="food-price">2,00€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda" >
+      <h2 class="food-titile"  >Galão</h2>
+      <p>
+      </p>
+      <p class="food-price">1,70€</p>
+    </div>
+
+
+    <div class="texto-direita">
+      <h2 class="food-titile">Cappucino</h2>
+      <p>
+      </p>
+      <p class="food-price">2,50€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-esquerda">
+      <h2 class="food-titile"  >Chocolate Quente</h2>
+      <p>
+      </p>
+      <p class="food-price">2,00€</p>
+    </div>
+    <div class="texto-esquerda">
+      <h2 class="food-titile"  >Affogato</h2>
+      <p>
+      </p>
+      <p class="food-price">2,20€</p>
+    </div>
+</section>
+<section id="food-menu">
+  <h2 class="food-menu-heading2" >Expresso c’panna</h2>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Grande</h2>
+      <p>
+      </p>
+      <p class="food-price">1,80€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Pequeno</h2>
+      <p>
+      </p>
+      <p class="food-price">1,00€</p>
+    </div>
+  </div>
+    </section>
+    <section id="food-menu">
+      <h2 class="food-menu-heading2" >Americano</h2>
+      <div class="food-menu-container container">
+        <div class="texto-direita">
+          <h2 class="food-titile"  >Grande</h2>
+          <p>
+          </p>
+          <p class="food-price">1,50€</p>
+        </div>
+    
+    
+        <div class="texto-esquerda">
+          <h2 class="food-titile">Pequeno</h2>
+          <p>
+          </p>
+          <p class="food-price">1,20€</p>
+        </div>
+      </div>
+        </section>
+        <section id="food-menu">
+          <h2 class="food-menu-heading2" >Mocha</h2>
+          <div class="food-menu-container container">
+            <div class="texto-direita">
+              <h2 class="food-titile"  >Grande</h2>
+              <p>
+              </p>
+              <p class="food-price">2,50€</p>
+            </div>
+        
+        
+            <div class="texto-esquerda">
+              <h2 class="food-titile">Pequeno</h2>
+              <p>
+              </p>
+              <p class="food-price">2,50€</p>
+            </div>
+          </div>
+            </section>
+<section id="food-menu">
+  <h2 class="food-menu-heading" id="Wraps" style="font-weight: bold;">Extras</h2>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Chantilly</h2>
+      <p>
+      </p>
+      <p class="food-price">+0,60€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Shot Café</h2>
+      <p>
+      </p>
+      <p class="food-price">+0,80€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Cheirinho</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,00€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Bebida Vegetal</h2>
+      <p>
+      </p>
+      <p class="food-price">+0,25€</p>
+    </div>
+  </div>
+  <div class="food-menu-container container">
+    <div class="texto-direita">
+      <h2 class="food-titile"  >Scoop Proteína</h2>
+      <p>
+      </p>
+      <p class="food-price">+1,50€</p>
+    </div>
+
+
+    <div class="texto-esquerda">
+      <h2 class="food-titile">Aromas</h2>
+      <p>(caramelo/avelã/spicy pumpkin)
+      </p>
+      <p class="food-price">+0,60€</p>
+    </div>
+  </div>
+</section>
+  <!-- <section id="testimonials">
+      <h2 class="testimonial-title">What Our Customers Say</h2>
+      <div class="testimonial-container container">
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="https://i.postimg.cc/5Nrw360Y/male-photo1.jpg" alt="" />
+              <p class="customer-name">Ross Lee</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img
+                src="https://i.postimg.cc/sxd2xCD2/female-photo1.jpg"
+                alt=""
+              />
+              <p class="customer-name">Amelia Watson</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+         
+        </div>
+        <div class="testimonial-box">
+          <div class="customer-detail">
+            <div class="customer-photo">
+              <img src="https://i.postimg.cc/fy90qvkV/male-photo3.jpg" alt="" />
+              <p class="customer-name">Ben Roy</p>
+            </div>
+          </div>
+          <div class="star-rating">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <p class="testimonial-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+            voluptas cupiditate aspernatur odit doloribus non.
+          </p>
+         -->
+  </div>
+  </div>
+  </section>
+  <footer class="footer footer-minimal">
+    <div class="footer-main">
+        <div class="container">
+            <div class="row items align-items-center">
+                <div class="col-lg-3 col-md-4 col-12 item">
+                    <div class="widget-brand-info">
+                        <div class="widget-brand-info-main">
+                            <a href="index.html" class="logo" title="PathSoft">
+                                <img data-src="assets/img/logo-white.svg" class="lazy" width="133" height="36" src="/pt-PT/imagens/white.png" alt="PathSoft" data-loaded="true" style="opacity: 1;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md item">
+                    <div class="footer-item">
+                        <nav class="footer-nav">
+                          <ul class="footer-mnu footer-mnu-line">
+                            <li><a href="../casa.html" class="hover-link" data-title="Home"><span>Home</span></a></li>
+                            <li><a href="./ementa.html" class="hover-link" data-title="Menu"><span>menu</span></a></li>
+                            <li><a href="./contatos.html" class="hover-link" data-title="Contacts"><span>Contacts</span></a></li>
+                        </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row justify-content-between items">
+                <div class="col-md-auto col-12 item">
+                    <div class="copyright">© 2024 Natur Froyo, Lda. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+<!-- 
+    ................../ JS Code for smooth scrolling /...................... -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("a").on("click", function (event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $("html, body").animate({
+            scrollTop: $(hash).offset().top,
+          },
+          800,
+          function () {
+            window.location.hash = hash;
+          }
+        );
+      } // End if
+    });
+  });
+</script>
+
+</html>
+<script>
+    var scrollButtonInicio = document.getElementById("floating-buttoninicio");
+
+    scrollButtonInicio.addEventListener("click", function (event) {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth" // Isso fará uma rolagem suave para o topo
+      });
+    });
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleCheckbox = document.getElementById("toggle-mode");
+    const body = document.body;
+
+    // Função para aplicar o modo selecionado
+    function applyMode(mode) {
+      if (mode === "dark") {
+        body.classList.add("dark-mode");
+      } else {
+        body.classList.remove("dark-mode");
+      }
+    }
+
+    let currentMode = localStorage.getItem("mode");
+
+    // Se não houver um modo salvo, use o modo do sistema
+    if (currentMode === null) {
+      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        currentMode = "dark";
+      } else {
+        currentMode = "light";
+      }
+    }
+
+    // Atualizar o estado do checkbox com base no modo atual
+    toggleCheckbox.checked = currentMode === "dark";
+
+    // Aplicar o modo atual
+    applyMode(currentMode);
+
+    toggleCheckbox.addEventListener("change", function () {
+      localStorage.setItem("mode", toggleCheckbox.checked ? "dark" : "light");
+
+      // Alternar o modo após a mudança do checkbox
+      applyMode(localStorage.getItem("mode"));
+    });
+    
+  
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const foodSliders = document.querySelectorAll('.food-slider');
+
+    foodSliders.forEach(foodSlider => {
+      const prevButton = foodSlider.querySelector('.arrow-left');
+      const nextButton = foodSlider.querySelector('.arrow-right');
+      const slides = foodSlider.querySelectorAll('.food-type');
+      let currentSlideIndex = 0;
+
+      // Elemento para exibir o "preview"
+      const preview = foodSlider.querySelector('.preview');
+
+      function updatePreview() {
+        const prevPreview = foodSlider.querySelector('.prev-preview');
+        const currentPreview = foodSlider.querySelector('.current-preview');
+        const nextPreview = foodSlider.querySelector('.next-preview');
+
+        const prevSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+        const nextSlideIndex = (currentSlideIndex + 1) % slides.length;
+
+        const prevCategory = slides[prevSlideIndex].querySelector('h3').textContent;
+        const currentCategory = slides[currentSlideIndex].querySelector('h3').textContent;
+        const nextCategory = slides[nextSlideIndex].querySelector('h3').textContent;
+
+        // Atualize o "preview" com as categorias e outros conteúdos relevantes
+        prevPreview.textContent = prevCategory;
+        currentPreview.textContent = currentCategory;
+        nextPreview.textContent = nextCategory;
+      }
+
+      prevButton.addEventListener('click', () => {
+        moveToSlide(currentSlideIndex - 1);
+      });
+
+      nextButton.addEventListener('click', () => {
+        moveToSlide(currentSlideIndex + 1);
+      });
+
+      function moveToSlide(index) {
+        slides[currentSlideIndex].style.display = 'none';
+        currentSlideIndex = index;
+        if (currentSlideIndex < 0) {
+          currentSlideIndex = slides.length - 1;
+        }
+        if (currentSlideIndex >= slides.length) {
+          currentSlideIndex = 0;
+        }
+        slides[currentSlideIndex].style.display = 'block';
+        updatePreview();
+      }
+
+      moveToSlide(0);
+      updatePreview();
+    });
+    
+  });
+  function toggleLanguage() {
+      window.location.href = "../en_EN/menu.html";
+  }
+  // Função para verificar a posição de rolagem e mostrar/ocultar o botão
+  function checkScrollPosition() {
+    var floatingButton = document.getElementById('floating-buttoninicio');
+    var scrollPosition = window.scrollY || window.pageYOffset;
+
+    if (scrollPosition >= 120 && window.innerWidth <= 768) {
+      floatingButton.style.opacity = 1;
+    } else {
+      floatingButton.style.opacity = 0;
+    }
+  }
+
+  // Adicione um ouvinte de evento de rolagem à janela
+  window.addEventListener('scroll', checkScrollPosition);
+  window.addEventListener('resize', checkScrollPosition); // Lidar com alterações de tamanho da janela
+
+  checkScrollPosition();
+
+</script>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../pt-PT/contactos/style.css" />
+    <link rel = "icon" href =  "./imagens/Novo Projeto.ico" 
+    type = "image/x-icon">
+    <link rel="stylesheet" href="/pt-PT/stylesheet.css">
+    <link rel="stylesheet" href="../pt-PT/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    
+    <title>Dondué contactos</title>
+    
+  </head>
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container container">
+      <a href="../casa.html" class="Logo" title="Logo">
+        <img id="logoImage2" class="logoImage2" src="/PT-pt/imagens/white.png" alt="Logo" />
+        <img id="logoImage" class="logoImage" src="/PT-pt/imagens/black.png" alt="Logo" />
+      </a>
+      <input type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div> 
+      <ul class="menu-items">
+        <li><a href="../casa.html">Casa</a></li>
+        <li><a href="./ementa.html">Ementa</a></li>
+        <li><a href="./contatos.html">Contatos</a></li>
+        <label>
+          <input class="toggle-checkbox" type="checkbox" id="toggle-mode">
+          <div class="toggle-slot">
+            <div class="sun-icon-wrapper">
+              <div class="iconify sun-icon" data-icon="feather-sun" data-inline="false"></div>
+            </div>
+            <div class="toggle-button"></div>
+            <div class="moon-icon-wrapper">
+              <div class="iconify moon-icon" data-icon="feather-moon" data-inline="false"></div>
+            </div>
+          </div>
+        </label>
+        <button id="languageButton" onclick="toggleLanguage()">EN</button>
+  </nav>
+  <body>
+    <div class="container">
+      <div class="contact_data2">
+        <ul>
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <strong id="morada">
+                Localização:</strong>
+            <p>R. do Melo 12, 9500-091 Ponta Delgada</p>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <strong>Email:</strong>
+            <p> info@dondue.pt </p>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <strong id="tele">Telefone:</strong>
+            <p>+351 296 629 277</p>
+          </li>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=351963360080">
+                <i class="fab fa-whatsapp" ></i>
+            </a>
+            <strong>WhatsApp:</strong>
+            <p>+351 963 360 080</p>
+          </li>
+        </ul>
+        <div class="map">
+          <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3155.1425474577627!2d-25.671562623545814!3d37.739799914172934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb432ab6085305ef%3A0xa331d3d790bdbb40!2zRE9ORFXDiQ!5e0!3m2!1spt-PT!2spt!4v1698233624420!5m2!1spt-PT!2spt"
+            width="600"
+            height="450"
+            style="border: 0;padding-bottom: 3%;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div class="contact_data">
+        <h2 style="white-space: nowrap;">Contate-nos</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+          <input type="hidden" name="accessKey" value="6d40e3dd-7201-4744-bb4f-651c6a357a82">
+          <label for="name">Nome:</label>
+          <input type="text" name="name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="subject">Assunto:</label>
+          <input type="text" name="subject">
+          <label for="message">Mensagem:</label>
+          <textarea name="message"></textarea>
+          <input type="hidden" name="redirectTo" value="http://192.168.1.91:5500/contactos/cantactos.html">
+          <input type="text" name="honeypot" style="display: none;">
+          <button type="submit" id="enviar">Enviar Mensagem</button>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+    <footer class="footer footer-minimal">
+      <div class="footer-main">
+          <div class="container2">
+              <div class="row items align-items-center">
+                  <div class="col-lg-3 col-md-4 col-12 item">
+                      <div class="widget-brand-info">
+                          <div class="widget-brand-info-main">
+                              <a href="index.html" class="logo" title="PathSoft">
+                                  <img data-src="assets/img/logo-white.svg" class="lazy" width="133" height="36" src="/pt-PT/imagens/white.png" alt="PathSoft" data-loaded="true" style="opacity: 1;">
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md item">
+                      <div class="footer-item">
+                          <nav class="footer-nav">
+                            <ul class="footer-mnu footer-mnu-line">
+                              <li><a href="../casa.html" class="hover-link" data-title="casa"><span>Casa</span></a></li>
+                              <li><a href="./ementa.html" class="hover-link" data-title="ementa"><span>Ementa</span></a></li>
+                              <li><a href="./contatos.html" class="hover-link" data-title="Contatos"><span>Contatos</span></a></li>
+                          </ul>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="container2">
+              <div class="row justify-content-between items">
+                  <div class="col-md-auto col-12 item">
+                      <div class="copyright">© 2024 Natur Froyo, Lda. All rights reserved.</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>  
+  <script>
+    function toggleLanguage() {
+        window.location.href = "/en_EN/contacts.html";
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const toggleCheckbox = document.getElementById("toggle-mode");
+        const body = document.body;
+
+        // Função para aplicar o modo selecionado
+        function applyMode(mode) {
+            if (mode === "dark") {
+                body.classList.add("dark-mode");
+            } else {
+                body.classList.remove("dark-mode");
+            }
+        }
+
+        let currentMode = localStorage.getItem("mode");
+
+        // Se não houver um modo salvo, use o modo do sistema
+        if (currentMode === null) {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                currentMode = "dark";
+            } else {
+                currentMode = "light";
+            }
+        }
+
+        // Atualizar o estado do checkbox com base no modo atual
+        toggleCheckbox.checked = currentMode === "dark";
+
+        // Aplicar o modo atual
+        applyMode(currentMode);
+
+        toggleCheckbox.addEventListener("change", function () {
+            localStorage.setItem("mode", toggleCheckbox.checked ? "dark" : "light");
+
+            // Alternar o modo após a mudança do checkbox
+            applyMode(localStorage.getItem("mode"));
+        });
+
+    });
+
+</script>
+</body>
+
+</html>
+

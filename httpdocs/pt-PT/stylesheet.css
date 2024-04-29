@@ -1,0 +1,1405 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@200;600&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;1,6..12,300;1,6..12,500&display=swap');
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.Logo {
+  position: relative;
+  width: 100px;
+  /* Defina a largura desejada */
+  height: 100px;
+  /* Defina a altura desejada */
+}
+
+.light-mode #logoImage {
+  opacity: 1;
+}
+.light-mode .default-button{
+  color: rgb(0, 0, 0);
+}
+.img-container{
+  border-radius: 10%;
+}
+/* Estilos para o modo escuro */
+.dark-mode #logoImage {
+  opacity: 0;
+}
+.food-titile{
+color: rgb(0, 0, 0);
+}
+.dark-mode .food-titile {
+  color: #ffffff;
+}
+.dark-mode .food-description p{
+  color: #bdbdbd;
+}
+.dark-mode .food-description .food-price {
+  color: rgb(234, 190, 44);
+}
+.dark-mode #CUSIOZIDASE {
+  filter: contrast(0%);
+  filter: brightness(20.9);}
+.dark-mode #home {
+  color: rgb(58, 58, 58);
+}
+#home {
+  color: rgb(66, 66, 66)
+}
+.dark-mode #titulo2 {
+  color: rgb(58, 58, 58);
+}
+#titulo2  {
+  color: rgb(66, 66, 66)
+}
+.light-mode #logoImage2 {
+  opacity: 0;
+}
+.dark-mode .default-button {
+  color: rgb(255, 255, 255)
+}
+/* Estilos para o modo escuro */
+.dark-mode #logoImage2 {
+  opacity: 1;
+}
+
+#LogoImage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-container {
+  padding: 20px;
+}
+
+#logoImage {
+  max-width: 100%;
+  height: auto;
+}
+
+#logoImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#logoImage2.logoImage2 {
+  margin-top: 10%;
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 5px;
+  height: 45%;
+  width: 100%;
+
+}
+
+#logoImage.logoImage {
+  margin-top: 10%;
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+  margin-bottom: 30px;
+  position: absolute;
+  top: 5px;
+  height: 45%;
+  width: 100%;
+
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Antonio', sans-serif;
+  font: bold;
+    overflow-x: hidden;
+
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+.container2 {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+label {
+  margin-left: 5%;
+  /* Ajuste o valor conforme necessário */
+}
+
+.btn-primary {
+  color: #fff;
+  background:rgb(234, 190, 44);
+}
+
+.btn-primary:hover {
+  background: #c7a123;
+  transition: background 0.3s ease-in-out;
+}
+
+.light-mode {
+  background-color: white;
+  color: black;
+}
+.light-mode #testimonials{
+  background-color: white;
+  color: black;
+}
+.dark-mode #testimonials{
+  background-color: #3b3b3b;
+  color: white;
+}
+.light-mode #testimonial-text{
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+/* Estilos para o modo escuro */
+.dark-mode {
+  background-color: #333;
+  color: white;
+}
+.floating-button {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: #858383; /* Cor do texto do botão */
+  padding: 2% 2%;
+  margin-right: 2%;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 9999; /* Para garantir que o botão esteja sempre por cima de tudo */
+}
+.light-mode h2 {
+  color: #555;
+}
+
+.dark-mode h2 {
+  color: #e8e8e8;
+}
+
+.light-mode p {
+  color: #555;
+}
+
+.dark-mode p {
+  color: #ffffff;
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.dark-mode .navbar {
+  background-color: #333;
+  color: white;
+  /* Outros estilos de modo escuro */
+}
+
+.light-mode .navbar {
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  box-shadow: 0px 5px 5px 0px #7d7d7d;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  color: #000;
+  opacity: 0.85;
+  height: 75px;
+  z-index: 12;
+}
+
+#toggle-mode.toggle-checkbox {
+  width: 0%;
+
+  height: 0%;
+}
+
+.navbar-container {
+
+  display: flex;
+  
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  margin-top: 0.5%;
+}
+
+.menu-items {
+  order: 2;
+  margin-top: 3%;
+  margin-bottom: 1%;
+
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 200;
+  transition: color 0.3s ease-in-out;
+
+}
+
+/* Modo Escuro */
+.dark-mode .menu-items a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color:rgb(234, 190, 44);
+  transition: color 0.3s ease-in-out;
+}
+
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)),
+    url("/pt-PT/imagens/back2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+
+/* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+}
+
+.about.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para o modo escuro */
+.about.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.about-img.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Estilos para o modo escuro */
+.about.img.dark-mode {
+  background-color: #333;
+  color: white;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  box-shadow: #0000006d 10px 10px 10px;
+  border-radius: 5%;
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* ..........////Food category///........... */
+
+#food {
+  padding: 5rem 0;
+  border-left: 100%;
+  border-right: 100%;
+  text-align: center;
+  /* Alinhe o conteúdo horizontalmente */
+
+}
+
+#food h2 {
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+
+.food-container {
+  display: flex;
+  justify-content: center;
+  /* Centralize horizontalmente os elementos dentro de .food-container */
+  flex-wrap: wrap;
+  /* Para que os elementos se ajustem à largura da tela */
+}
+
+/* Defina o tamanho máximo para as fotos dentro do slider */
+.food-type {
+  max-width: 100%;
+  /* As imagens não excederão o tamanho do contêiner */
+}
+
+
+.food-container img {
+  border-radius: 10%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.img-container {
+  margin: 0rem;
+  position: center;
+
+
+}
+
+/* Estilo para o contêiner pai da img-container (certifique-se de que ele tenha position: relative) */
+.img-container {
+  position: relative;
+}
+
+/* Estilo para os botões do slider */
+/* Estilo para alinhar os botões do slider no centro vertical */
+
+
+
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2.0rem;
+
+}
+
+.img-content a {
+  font-size: 1.3rem;
+}
+
+/* ... Seu CSS anterior ... */
+
+/* Estilo para a seta à esquerda da imagem */
+/* Este CSS alinha os elementos .arrow-left e .arrow-right no centro do ecrã */
+
+
+
+.food-slider {
+  position: relative;
+  
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #333;
+  /* Cor de fundo desejada */
+  color: #fff;
+  /* Cor do texto desejada */
+  width: 30px;
+  /* Largura desejada */
+  height: 30px;
+  /* Altura desejada */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: -10%;
+}
+
+.arrow-right {
+  right: -10%;
+}
+
+.dark-mode .slider-button {
+  background-color: white;
+  color: #333;
+  /* Outros estilos de modo escuro */
+}
+
+.light-mode .slider-button {
+  background-color: #333;
+  color: white;
+  /* Outros estilos de modo escuro */
+}
+
+
+.img-container::after {
+  border-radius: 10%;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.785);
+  opacity: 0;
+  z-index: 0;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  /* top: 40%; */
+}
+
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+margin-bottom: 2%;
+  text-align: center;
+  align-items: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #666;
+  font-weight: bold;
+}
+.food-menu-heading2 {
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+}
+.food-menu-container {
+  display: flex;
+  padding: 0px 0px 30px 0px;
+
+}
+#CUSIOZIDASE{
+  z-index: 999;
+}
+
+
+.food-description {
+  margin: auto 1.5rem;
+  
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #444;
+}
+.dark-mode .font-title{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #000000;
+}
+.food-description p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  #food h2 {
+    margin-top: 50px;
+  }
+  .menu-items {
+
+    margin-top: -9.2%;
+
+  }
+
+  .Logo {
+    margin-left: 70%;
+    margin-top: -5%;
+    display: block;
+  }
+
+
+  .food-menu-container {
+    flex-direction: row;
+    /* Define o layout em linha para os itens do menu */
+    justify-content: space-between;
+    /* Espaço entre os itens do menu */
+  }
+
+  .food-container img {
+    display: block;
+    max-width: 100%;
+    /* Evite que as imagens fiquem maiores que o contêiner */
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+
+  }
+
+  .food-menu-item {
+    flex: 1 1 calc(50% - 1rem);
+    /* Define a largura de 50% com algum espaço entre os itens */
+    margin-bottom: 1.5rem;
+    /* Espaço entre os itens */
+  }
+
+  .food-menu-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  @media (max-width: 768px) {
+    .arrow-left {
+      left: 0;
+    }
+
+    .slider-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #333;
+      /* Cor de fundo desejada */
+      color: #fff;
+      /* Cor do texto desejada */
+      width: 30px;
+      /* Largura desejada */
+      height: 30px;
+      /* Altura desejada */
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 2;
+      /* Coloque o botão acima do conteúdo da imagem (pode ser qualquer número maior do que o z-index do conteúdo da imagem) */
+    }
+
+    .arrow-right {
+      right: 0;
+    }
+  }
+  .food-description {
+    margin: 1rem;
+    /* Espaço entre a imagem e a descrição */
+  }
+
+  .font-title {
+    font-size: 1.6rem;
+    /* Tamanho da fonte menor para o título */
+  }
+
+  .food-description p {
+    font-size: 1.2rem;
+    /* Tamanho da fonte menor para a descrição */
+  }
+
+  .food-description .food-price {
+    font-size: 1.4rem;
+    /* Tamanho da fonte menor para o preço */
+  }
+}
+
+.food-description .food-price {
+  color: #eaa718;
+  font-weight: 700;
+  
+}
+
+/* ........./ Testimonial /.......... */
+
+#testimonials {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #000000;
+}
+.dark-mode .testimonial-box .testimonial-text {
+  color: #ffffff;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  box-shadow: #0000007e 10px 7px 10px;
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* ........ Contact Us........... */
+
+#contact {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;  
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(111, 111, 111);
+}
+.floating-button {
+  opacity: 0;
+}
+/* ......../ media query /.......... */
+/* Estilo para dispositivos móveis */
+@media screen and (max-width: 768px) {
+  .floating-button {
+    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    transition: opacity 0.3s; /* Adiciona uma transição suave de opacidade */
+    position: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.97;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 4px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .dark-mode .navbar.menu-items {
+    background-color: #333;
+    color: white;
+    /* Outros estilos de modo escuro */
+  }
+
+  .light-mode .navbar .menu-items {
+    background-color: white;
+    color: rgb(0, 0, 0);
+  }
+  .food-type {
+    box-shadow: 0px 10px 11px 0 #aaa;
+    border-radius: 10%;
+  }
+  .dark-mode .food-type {
+    box-shadow: 0px 0px 0px 0 #aaa;
+    border-radius: 10%;
+  }
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  .navbar .menu-items {
+    padding-top: 30px;
+    background: #fff;
+    height: 100vh;
+    max-width: 450px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-top: -6%;
+    margin-left: -50px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 27px 6px 0px #aaa;
+
+  }
+
+  /* Estilos para o modo escuro no menu responsivo */
+  /* Estilos padrão para o menu responsivo */
+  @media (max-width: 768px) {
+    .light-mode.navbar .menu-items {
+      background-color: #333;
+      color: white;
+    }
+
+    .navbar .menu-items {
+      background-color: white;
+      color: #333;
+    }
+
+    .navbar-container .hamburger-lines .line {
+      background: #333;
+      /* Cor padrão das linhas do menu responsivo */
+    }
+  }
+
+
+  /* Estilos para o modo escuro no menu responsivo */
+  @media (max-width: 768px) {
+    .dark-mode .navbar .menu-items {
+      background-color: #333;
+      color: white;
+    }
+
+    .dark-mode .navbar-container .hamburger-lines .line {
+      background: white;
+      /* Cor das linhas do menu responsivo no modo escuro */
+    }
+  }
+  /* Estilos para o modo claro no menu responsivo */
+  @media (max-width: 768px) {
+    .light-mode .navbar .menu-items {
+      background-color: white;
+      color: rgb(0, 0, 0);
+    }
+
+    .light-mode .navbar-container .hamburger-lines .line {
+      background: #333;
+      /* Cor das linhas do menu responsivo no modo claro */
+    }
+  }
+
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+
+  /* ......./ food /......... */
+
+
+
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .img-container {
+    
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  #languageButton {
+    margin-top :80%;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items li {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-container {
+    width: 80%;
+
+
+  }
+
+  .contact-container {
+    display: flex;
+    object-fit: cover;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 90%;
+    
+    margin: 3rem auto;
+  }
+
+
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-container h3 {
+    
+    font-size: 1.5rem;
+  }
+
+  .img-container .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
+
+.toggle-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.toggle-slot {
+  font-size: 10px;
+  position: relative;
+  height: 3.5em;
+  width: 7em;
+  border: 0px solid transparent;
+  border-radius: 10em;
+  background-color: rgb(175, 175, 175);
+  transition: background-color 250ms;
+}
+
+.toggle-checkbox:checked~.toggle-slot {
+  background-color: #374151;
+}
+
+.toggle-button {
+  transform: translate(0.3em, 0.25em);
+  position: absolute;
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background-color: #ffeccf;
+  box-shadow: inset 0px 0px 0px 0.75em #ffbb52;
+  transition: background-color 250ms, border-color 250ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .toggle-button {
+  background-color: #485367;
+  box-shadow: inset 0px 0px 0px 0.75em white;
+  transform: translate(3.65em, 0.25em);
+}
+
+.sun-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: #ffbb52;
+}
+
+.sun-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(15deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .sun-icon-wrapper {
+  opacity: 0;
+  transform: translate(3em, 2em) rotate(0deg);
+}
+
+.moon-icon {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  color: white;
+}
+
+.moon-icon-wrapper {
+  position: absolute;
+  height: 6em;
+  width: 6em;
+  opacity: 0;
+  transform: translate(11em, 2em) rotate(0deg);
+  transform-origin: 50% 50%;
+  transition: opacity 150ms, transform 500ms cubic-bezier(.26, 2.5, .46, .71);
+}
+
+.toggle-checkbox:checked~.toggle-slot .moon-icon-wrapper {
+  opacity: 1;
+  transform: translate(2em, 2em) rotate(-15deg);
+}
+
+/* Estilos CSS existentes da seção "food" */
+
+.iconify moon-icon{
+  z-index: 0;
+}
+
+
+
+.food-type {
+  flex: 0 0 25%;
+  /* Estilos CSS para as caixas de alimentos */
+}
+
+
+
+.food-container {
+  display: flex;
+  overflow: hidden;
+  background-image: "imagens/back.png";
+  position: relative;
+  /* Necessário para posicionar os botões */
+}
+
+.food-type {
+  flex: 0 0 25%;
+  /* Estilos CSS para as caixas de alimentos */
+  position: relative;
+  /* Necessário para posicionamento absoluto */
+}
+
+/* Estilos CSS para os botões de navegação do slider */
+
+/* Aumentar o tamanho das imagens dentro das caixas de alimentos */
+.food-container img {
+  
+  display: block;
+  width: 100%;
+  max-height: 250px;
+  /* Ajuste o tamanho da imagem conforme necessário */
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.food-type {
+  display: none;
+}
+
+.food-type:first-child {
+  display: block;
+}
+
+/* Estilo para a categoria anterior (à esquerda) */
+/* Estilos para a categoria anterior (à esquerda) */
+.food-type.prev {
+  transform: translateX(-100%);
+  opacity: 0.5;
+}
+
+/* Estilos para a categoria atual (no centro) */
+.food-type.center {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Estilos para a categoria seguinte (à direita) */
+.food-type.next {
+  transform: translateX(100%);
+  opacity: 0.5;
+}
+#languageButton {
+  background-color:#FFA500  ;
+  color: white;
+font-weight: bold;
+  margin-left:10%;
+  margin-bottom: 10px;
+z-index: 9999;
+  border: 2px solid #FFA500; /* Adiciona uma borda ao botão */
+  border-radius: 10px; /* Melhora a formatação do raio da borda */
+  padding: 10px 10px; /* Aumenta o preenchimento para melhorar a usabilidade */
+  width: 70px; /* Aumenta a largura para acomodar o texto */
+  height: 40px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  cursor: pointer; /* Altera o cursor para indicar interatividade */
+  transition: background-color 0.3s, color 0.3s; /* Adiciona transições para suavizar mudanças de cor */
+}
+/* Estilo para o botão laranja com palavras brancas */
+/* Estilo para o botão laranja com palavras brancas */
+.orange-button {
+  background-color: orange;
+  color: rgb(255, 255, 255);
+  
+}
+
+/* Estilo para o botão padrão */
+.default-button {
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode .texto-esquerda p{
+  color: #bdbdbd;
+}
+.dark-mode .texto-esquerda .food-price {
+  color: rgb(234, 190, 44);
+}
+.texto-esquerda {
+  padding-left:15%;
+  width: 50%;
+  max-width: 40%;
+  float: left;
+}
+.texto-esquerda {
+  margin: auto 1.5rem;
+}
+.texto-esquerda p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+.texto-esquerda p {
+  font-size: 1.2rem;
+  /* Tamanho da fonte menor para a descrição */
+}
+
+.texto-esquerda .food-price {
+  font-size: 1.4rem;
+  /* Tamanho da fonte menor para o preço */
+}
+
+
+.texto-esquerda .food-price {
+  color: rgb(234, 190, 44);
+  font-weight: 700;
+
+}
+.dark-mode .texto-direita p{
+  color: #bdbdbd;
+}
+.dark-mode .texto-direita .food-price {
+  color: rgb(234, 190, 44);
+}
+.texto-direita {
+  padding-left:15%;
+  width: 50%;
+  max-width: 40%;
+  float: left;
+}
+.texto-direita {
+  margin: auto 1.5rem;
+}
+.texto-direita p {
+  font-size: 1.4rem;
+  color: #555;
+  font-weight: 500;
+}
+.texto-direita p {
+  font-size: 1.2rem;
+  /* Tamanho da fonte menor para a descrição */
+}
+
+.texto-direita .food-price {
+  font-size: 1.4rem;
+  /* Tamanho da fonte menor para o preço */
+}
+
+
+.texto-direita .food-price {
+color: rgb(234, 190, 44);
+font-weight: 700;
+
+}
+
+@media (max-width: 1200px) {
+  .texto-esquerda {
+    padding-left: 0%;
+    width: 50%;
+    max-width: 40%;
+    float: left;
+  }
+
+  .texto-direita {
+    padding-left: 0%;
+    width: 40%;
+    max-width: 50%;
+    float: left;
+  }
+}
+/* Default styles */
+#custom {
+  padding-left: 15%;
+}
+@media (prefers-color-scheme: dark) {
+  
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  #custom {
+    padding-left: 0;
+  }
+  .food-menu-heading{margin-bottom: 5%;}
+}
